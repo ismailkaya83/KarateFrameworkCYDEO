@@ -54,7 +54,7 @@ Feature: Karate Java Integration
         #verify names
     And match response.data.name == newSpartan.name
 
-
+@test
   Scenario: Create a spartan with Random Data (JAVA) and delete
     * def SDG = Java.type('utilities.SpartanDataGenerator')
     * def newSpartan = SDG.createSpartan()

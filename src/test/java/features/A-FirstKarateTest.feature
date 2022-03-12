@@ -7,13 +7,13 @@ Feature: welcome to karate
 
   Scenario: more printing
     Given print 'some words to print'
-     * print 'my name is','karate kid'
+    * print 'my name is','karate kid'
     # , --> concat two strings +1 white space
-     * print 2+2
+    * print 2+2
 
   Scenario: variables
     * def name = 'Mike'
-    * print 'my name is' + name
+    * print 'my name is ' + name
     * def age = 20
     * print name,'is',age,'years old'
 
